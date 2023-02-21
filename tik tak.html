@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tak Toe game</title>
+    <link rel="stylesheet" href="tik tak.css">
+    <script>
+        var t=0;
+		function one()
+		{
+		
+			if(t%2==0)
+			{
+				document.getElementById('b1').value = 'O';
+				document.getElementById('b1').disabled = 'true';
+			}
+			else
+			{
+				document.getElementById('b1').value = 'X';	
+				document.getElementById('b1').disabled = 'true';
+			}
+			t++;
+			win();
+			playAudio1();
+			
+		}
+		function two()
+		{
+			
+			if(t%2==0)
+			{
+				document.getElementById('b2').value = 'O';
+				document.getElementById('b2').disabled = 'true';
+			}
+			else
+			{
+				document.getElementById('b2').value = 'X';	
+				document.getElementById('b2').disabled = 'true';
+			
+			}
+			t++;
+			win();
+			playAudio1();
+		}
+		function three()
+		{
+			
+			if(t%2==0)
+			{
+				document.getElementById('b3').value = 'O';
+				document.getElementById('b3').disabled = 'true';
+			
+			}
+			else
+			{
+				document.getElementById('b3').value = 'X';	
+				document.getElementById('b3').disabled = 'true';
+
+			}
+			t++;
+			win();
+			playAudio1();
+		}
+		function four()
+		{
+	
+			if(t%2==0)
+			{
+				document.getElementById('b4').value = 'O';
+				document.getElementById('b4').disabled = 'true';
+			}
+			else
+			{
+				document.getElementById('b4').value = 'X';	
+				document.getElementById('b4').disabled = 'true';
+			}
+			t++;
+			win();
+			playAudio1();
+	
+		}
+		function five()
+		{
+
+			if(t%2==0)
+			{
+				document.getElementById('b5').value = 'O';
+				document.getElementById('b5').disabled = 'true';
+			}
+			else
+			{
+				document.getElementById('b5').value = 'X';	
+				document.getElementById('b5').disabled = 'true';
+			}
+			t++;
+			win();
+			playAudio1();
+		}
+		function six()
+		{
+		
+			if(t%2==0)
+			{
+
+				document.getElementById('b6').value = 'O';
+				document.getElementById('b6').disabled = 'true';
+			}
+			else
+			{
+		
+				document.getElementById('b6').value = 'X';	
+				document.getElementById('b6').disabled = 'true';
+			}
+			t++;
+			win();
+			playAudio1();
+		}
+		function seven()
+		{
+			if(t%2==0)
+			{
+				
+				document.getElementById('b7').value = 'O';
+				document.getElementById('b7').disabled = 'true';
+			}
+			else
+			{
+			
+				document.getElementById('b7').value = 'X';	
+				document.getElementById('b7').disabled = 'true';
+			}
+			t++;
+			win();
+			playAudio1();
+		}
+		function eight()
+		{
+			if(t%2==0)
+			{
+				
+				document.getElementById('b8').value = 'O';
+				document.getElementById('b8').disabled = 'true';
+			}
+			else
+			{
+				
+				document.getElementById('b8').value = 'X';	
+				document.getElementById('b8').disabled = 'true';
+			}
+			t++;
+			win();
+			playAudio1();
+			
+		}
+		function nine()
+		{
+			if(t%2==0)
+			{
+				
+				document.getElementById('b9').value = 'O';
+				document.getElementById('b9').disabled = 'true';
+			}
+			else
+			{
+	
+				document.getElementById('b9').value = 'X';	
+				document.getElementById('b9').disabled = 'true';
+			}
+			t++;
+			win();
+			playAudio1();
+		}
+		function win()
+		{
+			var b1=document.getElementById('b1').value;
+			var b2=document.getElementById('b2').value;
+			var b3=document.getElementById('b3').value;
+			var b4=document.getElementById('b4').value;
+			var b5=document.getElementById('b5').value;
+			var b6=document.getElementById('b6').value;
+			var b7=document.getElementById('b7').value;
+			var b8=document.getElementById('b8').value;
+			var b9=document.getElementById('b9').value;
+			
+
+			if(b1=='O' && b2=='O' && b3=='O')
+			{
+				playAudio();
+				alert('Player O win');
+			}
+			else if(b1=='O' && b4=='O' && b7=='O')
+			{
+				playAudio();
+				alert('Player O win');
+				
+			}
+			else if(b1=='O' && b5=='O' && b9=='O')
+			{
+				playAudio();
+				alert('Player O win');
+			}
+			else if(b2=='O' && b5=='O' && b8=='O')
+			{
+				playAudio();
+				alert('Player O win');
+			}
+			else if(b3=='O' && b6=='O' && b9=='O')
+			{
+				playAudio();
+				alert('Player O win');
+			}
+			else if(b3=='O' && b5=='O' && b7=='O')
+			{
+				playAudio();
+				alert('Player O win');
+			}
+			else if(b4=='O' && b5=='O' && b6=='O')
+			{
+				playAudio();
+				alert('Player O win');
+			}
+			else if(b7=='O' && b8=='O' && b9=='O')
+			{
+				playAudio();
+				alert('Player O win');
+			}
+		
+
+			if(b1=='X' && b2=='X' && b3=='X')
+			{
+				playAudio();
+				alert('Player X win');
+			}
+			else if(b1=='X' && b4=='X' && b7=='X')
+			{
+				playAudio();
+				alert('Player X win');
+			}
+			else if(b1=='X' && b5=='X' && b9=='X')
+			{
+				playAudio();
+				alert('Player X win');
+			}
+			else if(b2=='X' && b5=='X' && b8=='X')
+			{
+				playAudio();
+				alert('Player X win');
+			}
+			else if(b3=='X' && b6=='X' && b9=='X')
+			{
+				playAudio();
+				alert('Player X win');
+			}
+			else if(b3=='X' && b5=='X' && b7=='X')
+			{
+				playAudio();
+				alert('Player X win');
+			}
+			else if(b4=='X' && b5=='X' && b6=='X')
+			{
+				playAudio();
+				alert('Player X win');
+			}
+			else if(b7=='X' && b8=='X' && b9=='X')
+			{
+				playAudio();
+				alert('Player X win');
+			}
+        }
+		function reset()
+		{
+			document.getElementById('b1').value = '';
+			document.getElementById('b2').value = '';
+			document.getElementById('b3').value = '';
+			document.getElementById('b4').value = '';
+			document.getElementById('b5').value = '';
+			document.getElementById('b6').value = '';
+			document.getElementById('b7').value = '';
+			document.getElementById('b8').value = '';
+			document.getElementById('b9').value = '';
+		}
+		function newgame()
+		{
+			window.location.assign("tik tak.html")
+		}
+
+		function playAudio()
+		{
+			document.getElementById("myAudio").play();
+		}
+		function playAudio1()
+		{
+			document.getElementById("myAudio1").play();
+		}
+
+   
+    </script>
+</head>
+<body>
+    <div class="game container">
+            <div class="box">
+                <div class="main">
+                    <input type="button" name="" value=""  onclick="one('');" class="btn bt_0 bl_0" id="b1">
+                    <input type="button" name="" value=""  onclick="two('');" class="btn bt_0" id="b2">
+                    <input type="button" name="" value=""    onclick="three('');" class="btn bt_0 br_0" id="b3">
+                </div>
+                <div class="main">
+                    <input type="button" name="" value=""    onclick="four('');" class="btn bl_0" id="b4">
+                    <input type="button" name="" value=""   onclick="five('');" class="btn" id="b5">
+                    <input type="button" name="" value=""   onclick="six('');" class="btn br_0" id="b6">
+                </div>
+                <div class="main">
+                    <input type="button" name="" value="" onclick="seven('');" class="btn bb_0 bl_0" id="b7">
+                    <input type="button" name="" value="" onclick="eight('');" class="btn bb_0" id="b8">
+                    <input type="button" name="" value="" onclick="nine('');" class="btn bb_0 br_0" id="b9">
+                </div>
+            </div>
+       
+    </div>
+    <center>
+		<input type="button" value="Reset" onclick="reset();" class="res">
+	</center>
+	<center>
+		<input type="button" name="" value="New Game" onclick="newgame();" class="new">
+	</center>
+	<audio src="audio.mp3"  id="myAudio"></audio>
+	<audio src="audio.wav"  id="myAudio1"></audio>
+</body>
+</html>
